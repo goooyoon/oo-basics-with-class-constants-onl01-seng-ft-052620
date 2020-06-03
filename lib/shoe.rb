@@ -1,6 +1,6 @@
 class Shoe
-  attr_accessor :color, :size, :material, :condition, :brand
-  attr_reader
+  attr_accessor :color, :size, :material, :condition
+  attr_reader :brand
 
 BRANDS=[]
 
@@ -14,3 +14,10 @@ BRANDS=[]
   end
 
 end
+
+
+
+def initialize(brand)
+    @brand = brand	    @brand = brand
+    BRANDS << brand unless BRANDS.any? { |b| b == brand }
+  end	  end
