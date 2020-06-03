@@ -14,5 +14,3 @@ BRANDS=[]
   end
 
 end
-
-BRANDS.size
